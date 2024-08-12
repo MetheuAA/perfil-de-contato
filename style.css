@@ -138,7 +138,7 @@ ul li a:hover {
 }
 
 ul li:hover ion-icon {
-    fill: var(--stroke-color);
+    color: var(--stroke-color);
 }
 
 ul li a ion-icon {
@@ -182,4 +182,39 @@ footer a {
 footer a:hover {
     color: var(--stroke-color);
     text-decoration: none;
+}
+
+/* Media Queries */
+@media(min-width:768px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.png);
+        
+        ul li a ion-icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+}
+
+/* Animation */
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
 }
