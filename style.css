@@ -6,7 +6,8 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.png);
+  /* --bg-url: url(./assets/bg-mobile.png); */
+  --bg-url: Linear-gradient(43deg, #270135fb, #0B101E, #270135fb, #0B101E);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -16,7 +17,8 @@
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  /* --bg-url: url(./assets/bg-mobile-light.jpg);*/
+  --bg-url: linear-gradient(43deg, #cdc9f1, #fdfdfd, #ffffff, #9d93d6);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -25,7 +27,8 @@
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
+  /* background: var(--bg-url) no-repeat top center/cover; */
+  background: var(--bg-url);
 }
 
 body * {
@@ -35,8 +38,9 @@ body * {
 
 #container {
   width: 100vw;
-  max-width: 588px;
-  margin: 56px auto 0px;
+  height: 100vh;
+  max-width: 700px;
+  margin: auto ;
   padding: 0 24px;
 }
 
@@ -188,7 +192,7 @@ footer a:hover {
 /* Media Queries */
 @media(min-width:768px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.png);
+    /* --bg-url: url(./assets/bg-desktop.png); */
 
     ul li a ion-icon {
       width: 25px;
@@ -197,7 +201,7 @@ footer a:hover {
   }
 
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
+    /* --bg-url: url(./assets/bg-desktop-light.jpg); */
   }
 }
 
